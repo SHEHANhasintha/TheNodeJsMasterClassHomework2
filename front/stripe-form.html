@@ -7,7 +7,7 @@
 <body>
 
 
-<form action="http://localhost:3000/orders" method="POST">
+<form action="http://localhost:3000/orders?action=callbackFromStripe&cartId=j07ln94cl0o7j9b764wk" method="POST">
     <script
       src="https://checkout.stripe.com/checkout.js" class="stripe-button"
       data-key="pk_test_D4HoOHWQt80EHUcBqNpqPdlK"
@@ -15,7 +15,8 @@
       data-name="EyalBardugo"
       data-description="Example charge"
       data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
-      data-locale="auto">
+      data-locale="auto"
+      data-bubu="koko">
     </script>
   </form>
 
