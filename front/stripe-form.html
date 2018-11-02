@@ -6,7 +6,9 @@
 </head>
 <body>
 
-
+<!-- Form with payment button by Stripe.
+     the cartId need to be set by from after save the cart with items.
+-->
 <form action="http://localhost:3000/orders?action=callbackFromStripe&cartId=j07ln94cl0o7j9b764wk" method="POST">
     <script
       src="https://checkout.stripe.com/checkout.js" class="stripe-button"
@@ -15,8 +17,7 @@
       data-name="EyalBardugo"
       data-description="Example charge"
       data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
-      data-locale="auto"
-      data-bubu="koko">
+      data-locale="auto">
     </script>
   </form>
 
